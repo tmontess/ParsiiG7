@@ -394,3 +394,33 @@ p  {
   padding: 20px;
 }
 
+
+.clientes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.cliente-box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #d0d0d0;
+}
+
+.cliente-box h2 {
+  font-size: 18px;
+  color: #004aad;
+  font-weight: bold;
+}
+
+.cliente-box img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.cliente-box p {
+  font-size: 16px;
+}

@@ -109,16 +109,6 @@ nav a:hover{
     max-height: 544px;
 }
 
-/*.contenedor-deportes, .contenedor-deportes-2{
-    width: 100%;
-    height: 250px;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}*/
-
 .sports-div{
     background-color: #004aad;
     padding: 10px;
@@ -373,3 +363,47 @@ p  {
   }
 
 }
+
+.cliente-box h2 {
+  font-size: 30px; 
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #004aad; 
+  -webkit-text-stroke: 1px #004aad;]
+}
+
+.cliente-comment {
+  background-color: #f4f4f4; 
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+.cliente-comment h3 {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.cliente-box p {
+  font-size: 24px; 
+  margin: 10px 0;
+  text-align: center;
+}
+
+.form-map label, .form-map input, .form-map textarea, .form-map select {
+  font-size: 20px; 
+}
+
+.form-map .forms {
+  padding: 30px;
+}
+
+
+.form-map .motivo {
+  font-size: 30px; 
+  padding: 20px;
+}
+

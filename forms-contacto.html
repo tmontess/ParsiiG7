@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liceo Naval | Contacto</title>
+    <link rel="stylesheet" href="CSS/forms-styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <nav class="header-nav">
+                <div class="header-logo">
+                    <img src="Images/escudo-liceo-naval.png" alt="escudo" width="80px">
+                </div>
+               <div class="header-btns" id="show-menu">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="el-club.html">El Club</a></li>
+                    <li><a href="index.html#title-deportes">Deportes</a></li>
+                    <li> <a href="#">Horarios</a></li>
+                    <li><a href="#">Novedades</a></li>
+                    <li><a href="forms-contacto.html">Contacto</a></li>
+                </ul>
+               </div>
+            </nav>
+        </div>
+        <div class="header-card">
+            <div class="container-header-card">
+                <img src="Images/foto-equipo-hockey.jpg" alt="foto-equipos" width="100%">
+            </div>
+        </div>
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+
+    <div class="container-all" id="move-content"></div>
+
+    <main>
+        <section>
+            <div class="form-map">
+                <div class="forms">
+                    <form action="mailto:oliisilvacano@gmail.com" method="get" id="form">
+                        <fieldset class="fieldset">
+                            <legend class="contacto">DEJANOS TU MENSAJE</legend>
+                            <div class="primer-f" id="contacto">
+                                <div>
+                                    <label for="fullname">Nombre y Apellido: </label>
+                                    <input type="text" name="fullname" id="fullname" maxlength="20" placeholder="Ingrese su nombre y apellido" required>
+                                </div>
+                                <div>
+                                    <label for="email">Email: </label>
+                                    <input type="email" name="email" id="email" placeholder="Ingrese su email" required>
+                                </div>
+                                <div>
+                                    <label for="age">Edad: </label>
+                                    <input type="number" name="age" id="age" min="1" max="99" value="" class="input-age">
+                                </div>
+                                <div>
+                                    <label for="contact">Detalle su motivo de contacto: </label>
+                                    <textarea name="contact" id="contact" cols="30" rows="10" placeholder="Detalle su motivo de contacto" class="motivo" minlength="20" required></textarea>
+                                </div>
+                                <input type="submit" value="Enviar">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26292.54742195724!2d-58.46007641540527!3d-34.539160576846285!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb56281ecb3c5%3A0x6bbd839e7b3cff4a!2sClub%20Liceo%20Naval%20(acceso)!5e0!3m2!1sen!2sar!4v1695000724500!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <nav class="footer-nav">
+                <img src="Images/escudo-liceo-naval.png" alt="escudo" width="80px" height="80px">
+                <h1 class="title-footer">Club Liceo Naval</h1>
+                <div class=menu-footer>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Como Llegar</a></li>
+                        <li><a href="forms-contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <p class="p-footer"><strong>Direccion:</strong> Av. Int. Cantilo 3200, Buenos Aires 
+                <br> <strong>Telefono:</strong> 011 4703-4074
+                </p>
+            </nav>
+        </div>
+    </footer>
+    
+</body>
+<script src="script.js"></script>
+<script src="validacion.js"></script>
+</html>

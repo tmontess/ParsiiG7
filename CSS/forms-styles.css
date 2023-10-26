@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100;300&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p{ font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+.header-nav{
+  background-color: black;
+  width: 100%;
+  padding: 0;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+fieldset {
+  border: 1px solid #ccc; /* Borde con color gris */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 20px; /* Margen inferior */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para la leyenda del fieldset */
+legend {
+  font-weight: bold; /* Texto en negrita */
+  color: #333; /* Color del texto */
+}
+
+fieldset input[type="text"],
+fieldset input[type="email"],
+fieldset input[type="number"],
+fieldset textarea {
+    width: 80%; /* Ocupar todo el ancho del fieldset */
+    margin-bottom: 10px; /* Margen inferior entre los elementos */
+    padding: 12px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde con color gris */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+
+.header-nav ul {
+    display: flex;
+  }
+  
+  .header-nav ul li {
+    padding: 15px;
+  }
+  
+  .header-nav ul li a {
+    padding: 10px;
+  }
+  
+  .header-nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+  }
+  
+  .header-nav ul.nav-menu {
+    flex: 1;
+    margin-left: 20px;  
+  }
+  
+  hr {
+    margin: 10px 0;
+  }
+
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+  
+  ul {
+    list-style: none;
+  }
+
+
+nav a:hover{
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+.box-titles{
+    background-color: black;
+    padding: 10px;
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.footer-nav{
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title-footer{
+    color: white;
+    padding: 10px;
+}
+
+.p-footer{
+    color: white;
+    padding: 2px;
+}
+
+.menu-footer{
+    flex: 1;
+    margin-left: 20px;
+  }
+
+  .menu-footer ul li {
+    padding: 7px;
+  }
+  
+  .menu-footer ul li a {
+    padding: 7px;
+  }
+  
+  .menu-footer ul li a:hover {
+    border-bottom: 2px solid #fff;
+  }
+
+  /* Estilos para el formulario y sus elementos */
+.forms {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fieldset {
+  border: none;
+}
+
+.contacto {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.primer-f div {
+  margin-bottom: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 3px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #004aad;
+}
+
+
+
+
+  h4{
+    margin: 10px;
+    justify-content: center;
+  }
+
+  .form-map{
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* Responsive*/
+
+@media screen and (max-width: 1220px){
+
+  .header-content,
+  .container-content,
+  .container-footer footer{
+      max-width: 1200px;
+      padding: 0px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+
+  .container-content{
+      width: 100%;
+      flex-direction: column;
+  }
+
+  article{
+      box-shadow: 0 0 0 0;
+  }
+
+
+}
+
+#container-aside {
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 862px){
+
+.contenedor-deportes, .contenedor-deportes-2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+  body{
+      overflow-x: hidden;
+  }
+
+  .move-container-all{
+      transform: translateX(300px);
+  }
+
+  .header-btns{
+      width: 0px;
+      height: 100vh;
+      position: fixed;
+      top: 80px;
+      left: 0;
+      background: rgba(0, 0, 0, 0.837);
+      overflow: hidden;
+      transform: translateX(-350px);
+      box-shadow: 10px 0 20px -25px black;
+      transition: all 300ms cubic-bezier(1,0,0,1);
+  }
+
+
+  .show-lateral {
+      width: 300px;
+      transform: translateX(0px);
+  }
+
+  .header-btns ul{
+      flex-direction: column;
+  }
+
+  .header-btns nav ul li{
+      max-width: 200px;
+      height: 50px;
+      justify-content: flex-start;
+  }
+
+  
+
+
+  .header-btns nav ul li a{
+      margin-top: 40px;
+      color: #858585;
+  }
+
+  .header-btns nav ul li a i{
+      width: 20px;
+      display: inline-block;
+      margin-right: 10px;
+  }
+
+  #icon-menu{
+      display: flex;
+  }
+
+  .nav-menu a:after{
+      bottom: 0;
+      width: 0;
+  }
+
+}
+
+/* Estilos para pantallas con un ancho máximo de 800px */
+@media (max-width: 998px) {
+  .form-map {
+      display: flex;
+      flex-direction: column-reverse; /* Cambia la dirección del eje principal a columna y pone el mapa debajo del formulario */
+  }
+
+  .form-map div {
+      width: 100%; /* Asegura que ambos elementos ocupen el 100% del ancho de la pantalla */
+  }
+
+  iframe {
+      width: 100%; /* Asegura que el mapa ocupe el 100% del ancho del contenedor */
+      height: 300px; /* Establece la altura del mapa según tus necesidades */
+  }
+}

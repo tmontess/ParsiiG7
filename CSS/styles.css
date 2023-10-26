@@ -424,3 +424,11 @@ p  {
 .cliente-box p {
   font-size: 16px;
 }
+
+.deportes-titles h1 {
+  background-color: #004aad;
+  color: #00bfff;
+  text-align: center; /* Centra el texto horizontalmente */
+  padding: 10px; /* Añade un poco de espacio alrededor del texto */
+  margin: 0; /* Elimina el margen predeterminado para el título */
+}

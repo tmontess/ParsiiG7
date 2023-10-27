@@ -114,7 +114,7 @@ nav a:hover{
     padding: 10px;
     border-radius: 10px;
 }
-.contenedor-deportes{
+.contenedor-servicios{
     background-color: white;
     max-width: 100vw;
     padding-left: 7%;
@@ -126,20 +126,20 @@ nav a:hover{
     justify-content: center;
     align-items: center;
 }
-.contenedor-deportes  ul {
+.contenedor-servicios  ul {
     display: flex;
   }
 
-  .contenedor-deportes  ul li {
+  .contenedor-servicios  ul li {
     padding: 10px;
   }
   
-  .contenedor-deportes ul li a {
+  .contenedor-servicios ul li a {
     padding: 10px;
     height: 150px;
   }
 
-.section-deportes{
+.section-servicios{
     padding-right: 7%;
     padding-left: 7%;
 }
@@ -204,21 +204,13 @@ p  {
     margin: 5px;
 }
 
-.deportes-titles{
+.servicios-titles{
     color: white;
     background-color: #004aad;
     width: 100%;
     padding: 5px
 }
 
-.rugby, .hockey, .futbol , .tenis , .nautica  {
-    padding: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
 
 .historia{
     padding-left:  40px;
@@ -282,7 +274,7 @@ p  {
 
 @media screen and (max-width: 862px){
 
-.contenedor-deportes, .contenedor-deportes-2{
+.contenedor-servicios, .contenedor-servicios-2{
     display: flex;
     flex-direction: column;
 }
@@ -424,7 +416,7 @@ p  {
   font-size: 16px;
 }
 
-.deportes-titles h1 {
+.servicios-titles h1 {
   background-color: #004aad;
   color: #00bfff;
   text-align: center; /* Centra el texto horizontalmente */

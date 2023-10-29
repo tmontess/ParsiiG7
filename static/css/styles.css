@@ -197,7 +197,6 @@ nav a:hover{
   }
   
 
-/* rugby*/
 
 p  {
     padding: 2px;
@@ -224,17 +223,7 @@ p  {
     
 }
 
-.el-club-div1{
-    padding: 20px;
-}
 
-.el-club-div2{
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 60px;
-    text-align:left;
-    align-items: center;
-}
 
 #a-contacto{
     color: black;

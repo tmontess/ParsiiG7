@@ -24,7 +24,7 @@ def enterprise():
 
 @app.route('/experience')
 def experience():
-    return render_template('experience.html')
+    return render_template('experiencia.html')
 
 @app.route('/quienes-somos')
 def quienes_somos():

@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estaciona rapido| Contacto</title>
-    <link rel="stylesheet" href="CSS/forms-styles.css">
+    <title>Mi Sitio Web | Contacto</title>
+    <link rel="stylesheet" type="text/css" href="/ParsiiG7/static/css/styles.css">
 </head>
+
 <body>
+
     <header class="header">
+       
         <div class="header-content">
             <nav class="header-nav">
                 <div class="header-logo">
@@ -15,21 +18,23 @@
                 </div>
                <div class="header-btns" id="show-menu">
                 <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="quienes-somos.html">Quienes somos</a></li>
-                    <li><a href="index.html#title-Servicios">Servicios</a></li>
-                    <li> <a href="clientes.html">Clientes</a></li>
-                    <li><a href="experiencia.html">Experiencia</a></li>
-                    <li><a href="forms-contacto.html">Contacto</a></li>
+                    <li><a href="/ParsiiG7/index.html">Home</a></li>
+                    <li><a href="/ParsiiG7/quienes-somos.html">Quienes somos</a></li>
+                    <li><a href="/ParsiiG7/index.html#title-Servicios">Servicios</a></li>
+                    <li> <a href="/ParsiiG7/clientes.html">Clientes</a></li>
+                    <li><a href="/ParsiiG7/experiencia.html">Experiencia</a></li>
+                    <li><a href="/ParsiiG7/templates/forms-contacto.html">Contacto</a></li>
                 </ul>
                </div>
             </nav>
         </div>
+       
         <div class="header-card">
             <div class="container-header-card">
                 <img src="Images/parsii baner.jpeg" alt="foto-equipos" width="100%">
             </div>
         </div>
+       
         <div id="icon-menu">
             <i class="fas fa-bars"></i>
         </div>
@@ -42,13 +47,13 @@
         <section>
             <div class="form-map">
                 <div class="forms">
-                    <form action="mailto:tomi.montes.7@gmail.com" method="get" id="form">
+                    <form action="/api/forms-contacto" method="POST" id="form">
                         <fieldset class="fieldset">
                             <legend class="contacto">DEJANOS TU MENSAJE</legend>
-                            <div class="primer-f" id="contacto">
+                            <div class="primer-f" id="contacto"> 
                                 <div>
                                     <label for="fullname">Nombre y Apellido: </label>
-                                    <input type="text" name="fullname" id="fullname" maxlength="20" placeholder="Ingrese su nombre y apellido" required>
+                                    <input type="text" name="name" id="fullname" maxlength="20" placeholder="Ingrese su nombre y apellido" required>
                                 </div>
                                 <div>
                                     <label for="email">Email: </label>
@@ -59,13 +64,14 @@
                                     <input type="number" name="age" id="age" min="1" max="99" value="" class="input-age">
                                 </div>
                                 <div>
-                                    <label for="contact">Detalle su motivo de contacto: </label>
-                                    <textarea name="contact" id="contact" cols="30" rows="10" placeholder="Detalle su motivo de contacto" class="motivo" minlength="20" required></textarea>
+                                    <label for="explanation">Detalle su motivo de contacto: </label>
+                                    <textarea name="explanation" id="explanation" cols="30" rows="10" placeholder="Detalle su motivo de contacto" class="motivo" minlength="10" required></textarea>
                                 </div>
                                 <input type="submit" value="Enviar">
                             </div>
                         </fieldset>
                     </form>
+
                 </div>
                 
                 <div>

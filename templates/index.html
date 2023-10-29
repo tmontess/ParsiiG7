@@ -12,7 +12,7 @@
         <div class="header-content">
             <nav class="header-nav">
                 <div class="header-logo">
-                    <img src="Images/parssi logo.jpeg" alt="escudo" width="70" height="70">
+                    <img src="{{ url_for('static', filename='images/parssi logo.jpeg') }}" alt="escudo" width="70" height="70">
                 </div>
                 <div class="header-btns" id="show-menu">
                     <ul class="nav-menu">
@@ -31,7 +31,7 @@
         </div>
         <div class="header-card">
             <div class="container-header-card">
-                <img src="Images/IMAGES PARSII/portada.png" alt="foto-logo" width="100%">
+                <img src="{{ url_for('static', filename='images/portada.png') }}" alt="foto-logo" width="100%">
             </div>
         </div>
     </header>
@@ -50,17 +50,17 @@
                             <ul class="card">
                                 <li>
                                     <div class="servicios-div">
-                                        <a class="btn" href="Starter.html"><img src="Images/IMAGES PARSII/pc.png" alt="PC" width="400" title="PC"></a>
+                                        <a class="btn" href="/starter"><img src="{{ url_for('static', filename='images/pc.png') }}" alt="PC" width="400" title="PC"></a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="servicios-div">
-                                        <a class="btn" href="ParsiiG7\templates\Advanced.html"><img src="Images/IMAGES PARSII/celu.png" alt="Celu" width="400" title="Celu"></a>
+                                        <a class="btn" href="/advanced"><img src="{{ url_for('static', filename='images/celu.png') }}" alt="Celu" width="400" title="Celu"></a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="servicios-div">
-                                        <a class="btn" href="Enterprise.html"><img src="Images/IMAGES PARSII/camara.png" alt="Camara" width="400" title="Cámara"></a>
+                                        <a class="btn" href="/enterprise"><img src="{{ url_for('static', filename='images/camara.png') }}" alt="Camara" width="400" title="Cámara"></a>
                                     </div>
                                 </li>
                             </ul>
@@ -74,16 +74,16 @@
                 </div>
                 <div class="sponsors1">
                     <div class="sponsor">
-                        <img src="Images/sponsors/Infobae_América_Logo.png" alt="Infobae" width="150">
+                        <img src="{{ url_for('static', filename='images/Infobae_América_Logo.png') }}"alt="Infobae" width="150">
                     </div>
                     <div class="sponsor">
-                        <img src="Images/sponsors/La-Nacion.png" alt="La Nacion" width="150">
+                        <img src="{{ url_for('static', filename='images/La-Nacion.png') }}" alt="La Nacion" width="150">
                     </div>
                     <div class="sponsor">
-                        <img src="Images/sponsors/MINISTEREO.png" alt="MINISTEREO" width="150">
+                        <img src="{{ url_for('static', filename='images/MINISTEREO.png') }}" alt="MINISTEREO" width="150">
                     </div>
                     <div class="sponsor">
-                        <img src="Images/sponsors/yahoo.png" alt="Yahoo" width="150">
+                        <img src="{{ url_for('static', filename='images/yahoo.png') }}" alt="Yahoo" width="150">
                     </div>
                 </div>
             </section>
@@ -92,13 +92,13 @@
     <footer>
         <div class="container-footer">
             <nav class="footer-nav">
-                <img src="Images/parssi logo.jpeg" alt="escudo" width="80" height="80">
+                <img src="{{ url_for('static', filename='images/parssi logo.jpeg') }}" alt="escudo" width="70" height="70">
                 <h1 class="title-footer">Parsii</h1>
                 <div class="menu-footer">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Cómo Llegar</a></li>
-                        <li><a href="forms-contacto.html">Contacto</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/contacto">Cómo Llegar</a></li>
+                        <li><a href="/contacto">Contacto</a></li>
                     </ul>
                 </div>
                 <p class="p-footer"><strong>Dirección:</strong> Ing. Enrique Butty 275,CABA<br><strong>Teléfono:</strong>2923 45-8661</p>

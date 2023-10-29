@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <header class="header">
         <div class="header-content">
             <nav class="header-nav">
                 <div class="header-logo">
-                    <img src="Images/LOGO.png" alt="escudo" width="70px">
+                    <img src="{{ url_for('static', filename='images/parssi logo.jpeg') }}" alt="escudo" width="70" height="70">
                 </div>
                <div class="header-btns" id="show-menu">
                 <ul class="nav-menu">

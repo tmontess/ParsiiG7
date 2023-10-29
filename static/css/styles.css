@@ -94,7 +94,7 @@ nav a:hover{
 }
 
 .box-titles{
-    background-color: black;
+    background-color: #37B5FF;
     padding: 10px;
 }
 
@@ -145,7 +145,7 @@ nav a:hover{
 }
 
 .footer-nav{
-    background-color: black;
+    background-color: #37B5FF;
     padding: 20px;
     display: flex;
     flex-direction: row;

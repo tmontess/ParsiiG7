@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos</title>
+    <style>
+        /* Coloca aquí tus reglas de estilo CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            padding: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Estilo para resaltar los campos de datos */
+        ul li:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Estilo para los encabezados de los elementos de la lista */
+        ul li strong {
+            font-weight: bold;
+            color: #333;
+            margin-right: 10px;
+        }
+
+        /* Estilo para los datos */
+        ul li span {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Datos de formularios de contacto</h1>
+    <ul>
+        {% for formulario in formularios %}
+            <li>ID: {{ formulario.id }}, Nombre: {{ formulario.nombre }}, Email: {{ formulario.email }}, Edad: {{ formulario.edad }}, Motivo: {{ formulario.motivo }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

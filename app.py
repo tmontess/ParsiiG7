@@ -1,20 +1,24 @@
-from flask import Flask, request, jsonify, render_template
-from flask_sqlalchemy import SQLAlchemy
+from flask import Flask, redirect, request, jsonify, render_template
+from models import db, FormularioContacto, create_tables
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydatabase.db'  # Ejemplo de una base de datos SQLite
-db = SQLAlchemy(app)
+db.init_app(app)
 
-# Definir un modelo de datos para la tabla de formularios de contacto
-class FormularioContacto(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    nombre = db.Column(db.String(80))
-    email = db.Column(db.String(120))
-    edad = db.Column(db.Integer)
-    motivo = db.Column(db.String(200))
+#base de dats SQL
+with app.app_context():
+    formularios = FormularioContacto.query.all()
 
+    for formulario in formularios:
+        print(f"ID: {formulario.id}, Nombre: {formulario.nombre}, Email: {formulario.email}, Edad: {formulario.edad}, Motivo: {formulario.motivo}")
+
+
+# Crear las tablas en la base de datos
 with app.app_context():
     db.create_all()
+
+
+#Manejo de errores
 
 @app.errorhandler(400)
 def bad_request(error):
@@ -23,6 +27,15 @@ def bad_request(error):
 @app.errorhandler(404)
 def not_found(error):
     return jsonify({"error": "Recurso no encontrado"}), 404
+
+
+#Endpoints
+
+@app.route('/ver-datos')
+def ver_datos():
+    with app.app_context():
+        formularios = FormularioContacto.query.all()
+    return render_template('ver-datos.html', formularios=formularios)
 
 @app.route('/')
 def index():
@@ -69,7 +82,8 @@ def recibir_datos_formscontacto():
     db.session.add(nuevo_formulario)
     db.session.commit()
 
-    return jsonify({"message": "Datos de forms-contacto recibidos y guardados en la base de datos"})
+    # Redirigir al usuario a la página /ver-datos después de guardar los datos
+    return redirect('/ver-datos')
 
 @app.route('/clientes/<int:cliente_id>', methods=['PUT'])
 def actualizar_cliente(cliente_id):
@@ -85,6 +99,9 @@ def eliminar_cliente(cliente_id):
     return jsonify({"message": "Cliente eliminado con éxito"})
 
 if __name__ == '__main__':
+    with app.app_context():
+        create_tables()
     app.run(debug=True)
+
 
 

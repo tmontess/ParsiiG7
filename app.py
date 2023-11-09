@@ -1,25 +1,19 @@
-from flask import Flask
-
-app = Flask(__name)
-
-# Definición de rutas y configuración de la aplicación
-
-if __name__ == '__main__':
-    app.run()
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydatabase.db'  # Ejemplo de una base de datos SQLite
+from flask import Flask, redirect, request, jsonify, render_template
+from models import db, FormularioContacto, create_tables
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydatabase.db'
 db.init_app(app)
 
-#base de dats SQL
+# Crea las tablas en la base de datos
+with app.app_context():
+    create_tables()
+
+# Consulta datos de la tabla
 with app.app_context():
     formularios = FormularioContacto.query.all()
 
     for formulario in formularios:
         print(f"ID: {formulario.id}, Nombre: {formulario.nombre}, Email: {formulario.email}, Edad: {formulario.edad}, Motivo: {formulario.motivo}")
-
-
-# Crear las tablas en la base de datos
-with app.app_context():
-    db.create_all()
 
 
 #Manejo de errores
@@ -106,6 +100,5 @@ if __name__ == '__main__':
     with app.app_context():
         create_tables()
     app.run(debug=True)
-
 
 
